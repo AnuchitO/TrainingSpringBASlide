@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Spring Core By Anuchit Prasertsang</title>
+		<title>Spring For BA By Anuchit Prasertsang</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -59,7 +59,7 @@
 	<body>
             <div id="foot-tmpl" style="display:none;">
                 <h2 class="absolute-element" style="font-style: normal; font-variant: normal; position: absolute; width: 325px; height: 72px; z-index: 6; left: 380px; top: 609px;">
-                    <font color="#ffffff" style="background-color: rgb(152, 0, 0); font-size: 24px;">CORE</font>
+                    <font color="#ffffff" style="background-color: rgb(152, 0, 0); font-size: 24px;">BA</font>
                 </h2>
                 <h3 class="absolute-element" style="position: absolute; z-index: 4; left: 392px; top: 613px;">
                     <!--font style="font-size: 42px;">Spring <font color="#3c78d8">Framework</font-->
@@ -90,7 +90,7 @@
                             <font color="#434343" style="font-size: 32px;">from </font>SoftPlus Family
                         </p>
                         <h2 class="absolute-element" style="position: absolute; width: 325px; height: 72px; z-index: 6; left: 677px; top: 193px;">
-                            <font style="font-size: 54px; background-color: rgb(152, 0, 0);" color="#ffffff">CORE</font>
+                            <font style="font-size: 54px; background-color: rgb(152, 0, 0);" color="#ffffff">BA</font>
                         </h2>
                         <div style="margin-top:20px;">
 			    <img style="height:100px;" src="images/sofplusTech.png"/>
@@ -134,28 +134,9 @@
 				<h2>Agenda</h2>				
 					<ul>
 						<li class="fragment">What is Spring framework ?</li>
-						<li class="fragment">Why Spring framework ?</li>
 						<li class="fragment">Spring framework architecture</li>
 						<li class="fragment">Spring Concept</li>
-							<ul class="fragment">
-								<li class="fragment">Inversion of Control (IoC)</li>								<li class="fragment">Dependency Injection (DI)</li>
-							</ul>						
-						
-					</ul>
-				<aside class="notes">
-					Test Note
-				</aside>
-			</section>
-			<section>
-				<h2>Agenda (Continued)</h2>				
-					<ul>
-						<li class="fragment">Spring Bean Definition</li>
-						<li class="fragment">Spring Injecting Collection</li>
-						<li class="fragment">Spring Bean Definition Inheritance</li>
-						<li class="fragment">Spring Bean Scopes</li>					
-						<li class="fragment">Spring Bean Life Cycle</li>
-						<li class="fragment">Spring Beans Auto-Wiring</li>
-						<li class="fragment">Spring Annotation Based Configuration</li>
+						<li class="fragment">Spring Message Source</li>		
 					</ul>
 				<aside class="notes">
 					Test Note
@@ -169,48 +150,7 @@
 				 	<li >Light-weight yet comprehensive framework for building Java SE and Java EE applications</li>  
                 		</ul>
                     </section>
-                    <section>
-			<section>
-                        <h1>
- <span style="background-color: rgb(60, 120, 216);">
-                        <font color="#ffffff">why</font>
-                        </span>
-                        <h2 color="#3c78d8">Spring framework ?</h2>
-                   		<ul>
-				 	<li color="#666666" >Spring Framework does not enforce any specific programming model it has become widely popular in the Java community primarily as an alternative and replacement for the Enterprise JavaBean model</li>  
-                		</ul>
-			</section>
-<section>
-                        <h1>
- <span style="background-color: rgb(60, 120, 216);">
-                        <font color="#ffffff">why</font>
-                        </span>
-                        <h2 color="#3c78d8">Spring framework ?</h2>
-                   		<ul>
-				 	<li color="#666666" >Wiring components (JavaBeans) through Dependency Injection</li>  
-					<li color="#666666" >Design to interfaces</li>
-					<ul><li>Insulates a user of a functionality from implementation details</li></ul>
-                		</ul>
-			</section>
-<section>
-                        <h1>
- <span style="background-color: rgb(60, 120, 216);">
-                        <font color="#ffffff">why</font>
-                        </span>
-                        <h2 color="#3c78d8">Spring framework ?</h2>
-                   		<ul>
-				 	<li color="#666666" >Simplify use of popular technologies</li>  
-					<li color="#666666" >Integration with other technologies</li>
-					<ul>
-						<li>EJB for J2EE</li>
-						<li>Hibernate, iBates, JDBC (for data access)</li>
-						<li>Velocity (for presentation)</li>
-						<li>Struts and WebWork (For web)</li>
-						<li>Java Persistence API (JPA)</li>
-					</ul>
-                		</ul>
-			</section>
-                    </section>
+
                     <section>
                         <section>
                             <h2>Spring framework architecture</h2>
@@ -508,85 +448,6 @@ margin-left:0px;" src="images/arrow2.png"/>
 			</section>
                        
         </section>
-        <section>
-			<div style="position:relative ; left:0px; top:-350px;">
-				<h2>Spring Injecting Collection</h2>
-			</div>
-                        <section>	
-                            	<h2>&nbsp;</h2>
-				<ul>
-					<li >List</li>
-					<li >Set</li>
-					<li >Map</li>
-					<li >Properties</li>
-				</ul>
-                        </section>
-                        <section>
-                            <h2>&nbsp;</h2>
-                            <ul>
-				<li >List(example)</li>
-   			    </ul>
-				<pre><code class="data-trim contenteditable">
-                         <property name="addressList">
-                            <list>
-                                <value>INDIA</value>
-                                <value>Pakistan</value>
-                                <value>USA</value>
-                                <value>USA</value>
-                                <value>INDIA</value>
-                            </list>
-                         </property>
-				</code></pre>
-			    
-			
-                        </section>
-			<section>
-                            <h2>&nbsp;</h2>
-                            <ul>
-				<li >Set(example)</li>
-   			    </ul>
-				<pre><code class="data-trim contenteditable">
-                     <property name="addressSet">
-                        <set>
-                            <value>INDIA</value>
-                            <value>Pakistan</value>
-                            <value>USA</value>
-                            <value>USA</value>
-                        </set>
-                     </property>
-				</code></pre>
-                        </section>
-			<section>
-                            <h2>&nbsp;</h2>
-                            <ul>
-				<li >Map(example)</li>
-   			    </ul>
-				<pre><code class="data-trim contenteditable">
-                    <property name="addressMap">
-                        <map>
-                            &lt;entry key=&quot;1&quot; value=&quot;INDIA&quot;/&gt;
-                            &lt;entry key=&quot;2&quot; value=&quot;Pakistan&quot;/&gt;
-                            &lt;entry key=&quot;4&quot; value=&quot;USA&quot;/&gt;
-                        </map>
-                    </property>
-				</code></pre>
-                        </section>
-			<section>
-                            <h2>&nbsp;</h2>
-                            <ul>
-				<li >Properties(example)</li>
-   			    </ul>
-				<pre><code class="data-trim contenteditable">
-                    <property name="addressProp">
-                        <props>
-                            <prop key="one">INDIA</prop>
-                            <prop key="two">Pakistan</prop>
-                            <prop key="three">USA</prop>
-                            <prop key="four">USA</prop>
-                        </props>
-                    </property>
-				</code></pre>
-                        </section>
 			<section>
                             <h2>&nbsp;</h2>
  			    <h3>Lab3</h3>	
